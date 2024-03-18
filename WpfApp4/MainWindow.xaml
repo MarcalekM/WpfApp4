@@ -8,37 +8,37 @@
         Title="MainWindow" Height="650" Width="550">
     <Grid Background="#FFA5A3A3">
         <Label Content="Név:" HorizontalAlignment="Left" Margin="30,30,0,0" VerticalAlignment="Top" Height="26"/>
-        <TextBox HorizontalAlignment="Left" Margin="90,33,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Height="26"/>
+        <TextBox x:Name="Nev" HorizontalAlignment="Left" Margin="90,33,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Height="26"/>
         <Label Content="1. Hogyan töltöd a szabadidődet?" HorizontalAlignment="Left" Margin="30,121,0,0" VerticalAlignment="Top" FontFamily="Times New Roman"/>
-        <StackPanel HorizontalAlignment="Left" Margin="30,151,0,0" VerticalAlignment="Top" Width="240">
+        <StackPanel x:Name="F1" HorizontalAlignment="Left" Margin="30,151,0,0" VerticalAlignment="Top" Width="240">
             <CheckBox Content="Olvasással" FontFamily="Times New Roman"/>
             <CheckBox Content="Sportolással" FontFamily="Times New Roman"/>
             <CheckBox Content="Barátokkal lógok" FontFamily="Times New Roman"/>
             <CheckBox Content="Művészet és kreatív tevékenységek" FontFamily="Times New Roman"/>
         </StackPanel>
         <Label Content="2. Milyen típusú filmeket szeretsz nézni?" HorizontalAlignment="Left" Margin="30,212,0,0" VerticalAlignment="Top" FontFamily="Times New Roman"/>
-        <ComboBox HorizontalAlignment="Left" Margin="30,242,0,0" VerticalAlignment="Top" Width="240">
+        <ComboBox x:Name="F2" HorizontalAlignment="Left" Margin="30,242,0,0" VerticalAlignment="Top" Width="240">
             <ComboBoxItem Content="Akció és kaland" FontFamily="Times New Roman"/>
             <ComboBoxItem Content="Romantikus filmek" FontFamily="Times New Roman"/>
             <ComboBoxItem Content="Horror vagy thriller" FontFamily="Times New Roman"/>
             <ComboBoxItem Content="Dokumentumfilmek" FontFamily="Times New Roman"/>
         </ComboBox>
         <Label Content="3. Hogyan reagálsz a stresszes helyzetekre?" HorizontalAlignment="Left" Margin="30,269,0,0" VerticalAlignment="Top" FontFamily="Times New Roman"/>
-        <StackPanel HorizontalAlignment="Left" Margin="30,299,0,0" VerticalAlignment="Top" Width="240">
+        <StackPanel x:Name="F3" HorizontalAlignment="Left" Margin="30,299,0,0" VerticalAlignment="Top" Width="240">
             <RadioButton Content="Nyugodtan és racionálisan" FontFamily="Times New Roman"/>
             <RadioButton Content="Érzelmileg és intenzíven" FontFamily="Times New Roman"/>
             <RadioButton Content="Kerülöm a konfliktust" FontFamily="Times New Roman"/>
             <RadioButton Content="Megpróbálom megoldani a problémát" FontFamily="Times New Roman"/>
         </StackPanel>
         <Label Content="4. Milyen a kommunikációs stílusod?" HorizontalAlignment="Left" Margin="30,372,0,0" VerticalAlignment="Top" FontFamily="Times New Roman"/>
-        <ComboBox HorizontalAlignment="Left" Margin="30,402,0,0" VerticalAlignment="Top" Width="240">
+        <ComboBox x:Name="F4" HorizontalAlignment="Left" Margin="30,402,0,0" VerticalAlignment="Top" Width="240">
             <ComboBoxItem Content="Közvetlen és őszinte" FontFamily="Times New Roman"/>
             <ComboBoxItem Content=" Udvarias és megfontolt" FontFamily="Times New Roman"/>
             <ComboBoxItem Content="Társaságkedvelő és beszédes" FontFamily="Times New Roman"/>
             <ComboBoxItem Content="Zárkózott és hallgatag" FontFamily="Times New Roman"/>
         </ComboBox>
         <Label Content="5. Milyen környezetben érzed magad a legkényelmesebben?" HorizontalAlignment="Left" Margin="30,442,0,0" VerticalAlignment="Top" FontFamily="Times New Roman"/>
-        <ListBox HorizontalAlignment="Left" Margin="30,472,0,0" VerticalAlignment="Top" Width="475" Height="89" Background="#FFA5A3A3">
+        <ListBox x:Name="F5" HorizontalAlignment="Left" Margin="30,472,0,0" VerticalAlignment="Top" Width="475" Height="89" Background="#FFA5A3A3">
             <ListBoxItem Content="Nyüzsgő, társasági helyeken, mint például koncerteken vagy partikon" FontFamily="Times New Roman"/>
             <ListBoxItem Content="Nyugodt, csendes helyeken, mint például egy könyvtárban vagy a saját otthonodban" FontFamily="Times New Roman"/>
             <ListBoxItem Content="A szabadban, természetben, például erdőben vagy a tengerparton" FontFamily="Times New Roman"/>
@@ -46,7 +46,7 @@
         </ListBox>
         <Label Content="Email cím:" HorizontalAlignment="Left" Margin="30,76,0,0" VerticalAlignment="Top" Height="26"/>
         <TextBox HorizontalAlignment="Left" Margin="90,79,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Height="26"/>
-        <Button Content="Leadás" HorizontalAlignment="Left" Margin="168,591,0,0" VerticalAlignment="Top" Width="200" FontFamily="Times New Roman"/>
+        <Button Content="Leadás" HorizontalAlignment="Left" Margin="168,580,0,0" VerticalAlignment="Top" Width="200" FontFamily="Times New Roman" Click="Button_Click"/>
 
     </Grid>
 </Window>

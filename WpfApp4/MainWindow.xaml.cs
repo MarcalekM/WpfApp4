@@ -21,6 +21,28 @@ namespace WpfApp4
             InitializeComponent();
         }
 
-        
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Window2 secondWindow = new Window2();
+            secondWindow.Show();
+            foreach (CheckBox checkbox in F1.Children)
+            {
+                if (checkbox.IsChecked == true)
+                {
+                    secondWindow.lblf1.Content = checkbox.Content + " tölti";
+                }
+            }
+            secondWindow.lblf2.Content = ((ComboBoxItem)F2.SelectedItem).Content;
+            foreach (RadioButton radiobutton in F3.Children)
+            {
+                if (radiobutton.IsChecked == true)
+                {
+                    secondWindow.lblf3.Content = radiobutton.Content;
+                }
+            }
+            secondWindow.lblf4.Content = ((ComboBoxItem)F4.SelectedItem).Content;
+            secondWindow.txbf5.Text = ((ListBoxItem)F5.SelectedItem).Content.ToString();
+            //secondWindow.Nev2.Content += Nev.Text.ToString();
+        }
     }
 }
