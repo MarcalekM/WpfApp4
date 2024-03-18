@@ -42,7 +42,7 @@ namespace WpfApp4
             }
             secondWindow.lblf4.Content = ((ComboBoxItem)F4.SelectedItem).Content;
             secondWindow.txbf5.Text = ((ListBoxItem)F5.SelectedItem).Content.ToString();
-            //secondWindow.Nev2.Content += Nev.Text.ToString();
+            secondWindow.Nev2.Content += Nev.Text.ToString();
         }
     }
 }
